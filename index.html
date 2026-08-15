@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <div class="navbar-icons">
+            <p>...</p>
+            <p>&lt;</p>
+            <p>&gt;</p>
+        </div>
+
+        <div class="navbar-center">
+
+            <div class="navbar-home">
+                <img src="img/home-icon-nbg.png" alt="Home" class="home-icon">
+            </div>
+
+            <div class="navbar-search">
+
+                <img src="img/search-icon.png" alt="Search" class="search-icon">
+
+                <input
+                    type="text"
+                    class="search-input"
+                    placeholder="What do you want to play?">
+
+                <img src="img/X-shape.png" alt="Clear" class="clear-icon">
+
+            </div>
+
+        </div>
+
+        <div class="navbar-actions">
+
+            <img src="img/bell-icon.png" alt="Notifications" class="notification-icon">
+            <img src="img/people-icon.png" alt="Friends" class="friends-icon">
+
+            <div class="profile-picture"></div>
+
+            <div class="window-controls">
+                <p class="minimize-button">—</p>
+                <p class="close-button">✕</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="main-content">
+
+        <div class="left-sidebar">
+
+            <div class="upper-text">
+                <h3>Your Library</h3>
+                <p class="plus-icon" style="font-size: 20px;">+</p>
+            </div>
+
+            <div class="options">
+                <p>Playlists</p>
+                <p>Albums</p>
+                <p>Artists</p>
+            </div>
+
+            <div class="bar">
+                <img src="img/search-icon.png" alt="Search">
+                <p>Recents</p>
+            </div>
+
+
+            <div class="albums">
+
+                <div class="album-n">
+                    <img src="img/liked-songs.png" alt="Liked Songs">
+
+                    <div class="album-n-text">
+                        <h4>Liked songs</h4>
+
+                        <div class="description">
+                            <i class="bi bi-pin-angle-fill" style="color:greenyellow"></i>
+                            <p>playlist by YOU</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="album-n">
+                    <div class="album-picture"></div>
+
+                    <div class="album-n-text">
+                        <h4>Album 1</h4>
+
+                        <div class="description">
+                            <p>album</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="album-n">
+                    <div class="album-picture1"></div>
+
+                    <div class="album-n-text">
+                        <h4>Jane Doe</h4>
+
+                        <div class="description">
+                            <p>artist</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="album-n">
+                    <div class="album-picture2"></div>
+
+                    <div class="album-n-text">
+                        <h4>Single 1</h4>
+
+                        <div class="description">
+                            <p>single by Jane Doe</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="album-n">
+                    <div class="album-picture3"></div>
+
+                    <div class="album-n-text">
+                        <h4>Album 2</h4>
+
+                        <div class="description">
+                            <p>album</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="album-n">
+                    <div class="album-picture4"></div>
+
+                    <div class="album-n-text">
+                        <h4>Album 3</h4>
+
+                        <div class="description">
+                            <p>album</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="album-n">
+                    <div class="album-picture5"></div>
+
+                    <div class="album-n-text">
+                        <h4>John Doe</h4>
+
+                        <div class="description">
+                            <p>artist</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="middle-bar">
+
+            <div class="middle-bar-options">
+                <p>All</p>
+                <p>Music</p>
+                <p>Podcasts</p>
+            </div>
+
+
+            <div class="recently-opened">
+
+                <div class="recently-container">
+                    <img src="img/liked-songs.png" alt="Liked Songs" class="recently-icon">
+                    <p>Liked Songs</p>
+                </div>
+
+                <div class="recently-container">
+                    <div class="recently-picture recently-yellow"></div>
+                    <p>Album 1</p>
+                </div>
+
+                <div class="recently-container">
+                    <div class="recently-picture recently-blue"></div>
+                    <p>Jane Doe</p>
+                </div>
+
+                <div class="recently-container">
+                    <div class="recently-picture recently-orange"></div>
+                    <p>Single 1</p>
+                </div>
+
+                <div class="recently-container">
+                    <div class="recently-picture recently-lightgreen"></div>
+                    <p>Album 2</p>
+                </div>
+
+                <div class="recently-container">
+                    <div class="recently-picture recently-green"></div>
+                    <p>Album 3</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,388 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #0c0c0c;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 58px;
+    padding: 0 15px;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 10px;
+}
+
+.navbar-center {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar-icons p {
+    margin: 0;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.navbar-icons p:first-child {
+    position: relative;
+    top: -5px;
+}
+
+.home-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 380px;
+    padding: 6px 15px;
+    background-color: #242422;
+    border-radius: 999px;
+}
+
+.search-icon,
+.clear-icon {
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.notification-icon,
+.friends-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.profile-picture {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #FF8A8A;
+}
+
+.window-controls {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-left: 35px;
+    padding-right: 5px;
+}
+
+.minimize-button,
+.close-button {
+    margin: 0;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.search-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    font-family: inherit;
+    margin: 0 10px;
+}
+
+.search-input::placeholder {
+    color: #b3b3b3;
+}
+
+
+/* ================= MAIN CONTENT ================= */
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+/* ================= LEFT SIDEBAR ================= */
+
+.left-sidebar {
+    margin-top: 10px;
+    border-radius: 17px;
+    background-color: #242422;
+    width: 19%;
+    min-width: 250px;
+    padding: 0 10px;
+}
+
+.upper-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.plus-icon {
+    background-color: #383838;
+    padding: 5px 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.plus-icon:hover {
+    background: #4b4b4b;
+}
+
+.options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    min-height: 40px;
+}
+
+.options p {
+    background-color: #383838;
+    padding: 5px 10px;
+    margin: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    height: 40px;
+    font-size: 14px;
+}
+
+.bar img {
+    width: 20px;
+    height: 20px;
+}
+
+.albums {
+    padding: 10px;
+}
+
+.album-n {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 8px;
+    min-width: 0;
+}
+
+.album-n:hover {
+    background-color: #2d2d2d;
+}
+
+.albums img,
+.album-picture,
+.album-picture1,
+.album-picture2,
+.album-picture3,
+.album-picture4,
+.album-picture5 {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 10px;
+}
+
+.album-n-text {
+    min-width: 0;
+    flex: 1;
+}
+
+.album-n-text h4 {
+    margin: 0;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.description p {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* ================= ALBUM COLORS ================= */
+
+.album-picture {
+    background-color: #FAE251;
+}
+
+.album-picture1 {
+    background-color: #6594B1;
+}
+
+.album-picture2 {
+    background-color: #FF714B;
+}
+
+.album-picture3 {
+    background-color: #CFFFE2;
+}
+
+.album-picture4 {
+    background-color: #16423C;
+}
+
+.album-picture5 {
+    background-color: #615EFC;
+}
+
+
+/* ================= MIDDLE BAR ================= */
+
+.middle-bar {
+    background: linear-gradient(to bottom, #291b3d, #242422);
+    width: 100%;
+    border-radius: 17px;
+    margin-top: 10px;
+}
+
+.middle-bar-options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 15px;
+    margin-left: 20px;
+}
+
+.middle-bar-options p {
+    margin: 0;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #383838;
+    padding: 7px 13px;
+    border-radius: 20px;
+}
+
+.middle-bar-options p:hover {
+    background-color: #4b4b4b;
+}
+
+
+/* ================= RECENTLY OPENED ================= */
+
+.recently-opened {
+    max-width: 50%;
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.recently-container {
+    background-color: #383838;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 195px;
+    height: 45px;
+}
+
+
+/* Liked Songs image */
+
+.recently-icon {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+
+/* Other recently opened pictures */
+
+.recently-picture {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    border-radius: 0;
+}
+
+
+/* Recently opened colors */
+
+.recently-yellow {
+    background-color: #FAE251;
+}
+
+.recently-blue {
+    background-color: #6594B1;
+}
+
+.recently-orange {
+    background-color: #FF714B;
+}
+
+.recently-lightgreen {
+    background-color: #CFFFE2;
+}
+
+.recently-green {
+    background-color: #16423C;
+}
+
+
+/* Text inside recently opened */
+
+.recently-container p {
+    margin: 0;
+    padding-left: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
